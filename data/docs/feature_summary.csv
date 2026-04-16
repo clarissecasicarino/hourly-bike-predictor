@@ -1,0 +1,12 @@
+feature,Missing_Strategy,Transform,Priority
+season,None,None,High
+yr,None,None,Medium
+mnth,None,None,Medium
+hr,None,None,High
+holiday,None,Log,Low
+weekday,None,None,Low
+workingday,None,None,Medium
+weathersit,None,Scale,Medium
+temp,None,None,High
+hum,None,None,Medium
+windspeed,None,None,Low
