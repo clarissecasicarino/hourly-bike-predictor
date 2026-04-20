@@ -34,8 +34,11 @@ def get_preprocessor_tree():
     )
     return preprocessor
 
+# comment out for debugging
+"""
 linear_pre = get_preprocessor_linear()
 tree_pre = get_preprocessor_tree()
 
 print("Linear preprocessor:", linear_pre)
 print("Tree preprocessor:", tree_pre)
+"""
