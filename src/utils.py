@@ -1,12 +1,10 @@
-# type: ignore
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 
-
 def get_preprocessor_linear():
     """Preprocessor for Linear / Ridge (scaled + one‑hot)."""
-    numerical_cols = ["temp", "atemp", "hum", "windspeed"]
-    ordinal_cols   = ["season", "mnth", "hr", "weekday", "weathersit"]
+    numerical_cols = ["temp", "hum", "windspeed", "hr_sin", "hr_cos", "mnth_sin", "mnth_cos"]
+    ordinal_cols   = ["season", "weekday", "weathersit"]
     binary_cols    = ["holiday", "workingday", "yr"]
 
     preprocessor = ColumnTransformer(
@@ -22,8 +20,8 @@ def get_preprocessor_linear():
 
 def get_preprocessor_tree():
     """Preprocessor for RandomForest (no scaling + label‑encoded ordinals)."""
-    numerical_cols = ["temp", "atemp", "hum", "windspeed"]
-    ordinal_cols   = ["season", "mnth", "hr", "weekday", "weathersit"]
+    numerical_cols = ["temp", "hum", "windspeed", "hr_sin", "hr_cos", "mnth_sin", "mnth_cos"]
+    ordinal_cols   = ["season", "weekday", "weathersit"]
     binary_cols    = ["holiday", "workingday", "yr"]
 
     preprocessor = ColumnTransformer(
@@ -35,3 +33,9 @@ def get_preprocessor_tree():
         remainder="drop"
     )
     return preprocessor
+
+linear_pre = get_preprocessor_linear()
+tree_pre = get_preprocessor_tree()
+
+print("Linear preprocessor:", linear_pre)
+print("Tree preprocessor:", tree_pre)
