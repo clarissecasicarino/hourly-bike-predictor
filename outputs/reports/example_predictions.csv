@@ -1,0 +1,6 @@
+weekday,season_name,weather_name,workingday,actual_demand,predicted_demand,difference
+5,Winter,"Clear, few clouds, partly cloudy",1,63,87.58,24.58
+3,Fall,Mist and cloudy conditions,1,759,676.83,-82.16999999999996
+5,Winter,Mist and cloudy conditions,1,472,468.79,-3.2099999999999795
+2,Fall,"Clear, few clouds, partly cloudy",1,743,641.63,-101.37
+3,Fall,Light snow or light rain,1,398,397.58,-0.4200000000000159
