@@ -1,0 +1,57 @@
+MODEL DOCUMENTATION CARD
+========================================
+Model type: RandomForestRegressor
+Training date: 2026-04-22
+
+INTENDED USE
+Regression prediction for bike demand forecasting and operational planning.
+
+FEATURES
+season, yr, holiday, weekday, workingday, weathersit, temp, hum, windspeed, hr_sin, hr_cos, mnth_sin, mnth_cos
+
+OVERALL PERFORMANCE
+R²: 0.815
+RMSE: 70.805
+MAE: 43.105
+
+FAIRNESS / GROUP ANALYSIS
+- group_0
+  Count: 120
+  R²: 0.777
+  RMSE: 55.875
+  MAE: 38.349
+- group_1
+  Count: 119
+  R²: 0.646
+  RMSE: 102.458
+  MAE: 60.241
+- group_2
+  Count: 95
+  R²: 0.864
+  RMSE: 72.746
+  MAE: 42.954
+- group_3
+  Count: 96
+  R²: 0.871
+  RMSE: 67.578
+  MAE: 39.104
+- group_4
+  Count: 96
+  R²: 0.853
+  RMSE: 63.495
+  MAE: 37.493
+- group_5
+  Count: 96
+  R²: 0.865
+  RMSE: 53.815
+  MAE: 37.129
+- group_6
+  Count: 120
+  R²: 0.827
+  RMSE: 63.889
+  MAE: 43.458
+
+LIMITATIONS
+- Performance may vary across subgroups.
+- The model may still produce larger errors for rare conditions.
+- This model should be monitored after deployment for drift and subgroup performance.
