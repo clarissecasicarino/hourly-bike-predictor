@@ -1,0 +1,37 @@
+TRANSPARENCY REPORT
+========================================
+
+MODEL OVERVIEW
+Model type: RandomForestRegressor
+R²: 0.815
+RMSE: 70.805
+MAE: 43.105
+Number of features: 13
+Number of samples: 742
+
+FEATURE EXPLANATIONS
+- season: Season category of the observation.
+- yr: Year indicator.
+- holiday: Holiday indicator.
+- weekday: Day of the week.
+- workingday: Working day indicator.
+- weathersit: Weather situation category.
+- temp: Normalized temperature.
+- hum: Normalized humidity.
+- windspeed: Normalized wind speed.
+- hr_sin: Cyclical encoding of hour using sine.
+- hr_cos: Cyclical encoding of hour using cosine.
+- mnth_sin: Cyclical encoding of month using sine.
+- mnth_cos: Cyclical encoding of month using cosine.
+
+DECISION PROCESS
+- data_preparation: Preprocessing and feature engineering were applied before training.
+- model_selection: Random Forest was chosen because it captures nonlinear relationships and interactions well.
+- validation: Cross-validation and hyperparameter tuning were used to evaluate model stability.
+- interpretability: Permutation importance was used to explain which features most influenced predictions.
+
+LIMITATIONS
+- Performance may vary across subgroups such as weekday, season, workingday, and weather situation.
+- The model may be less reliable in rare or unusual demand conditions.
+- Predictions should support decision-making, not replace human judgment.
+- The model should be monitored and retrained if data drift occurs.
