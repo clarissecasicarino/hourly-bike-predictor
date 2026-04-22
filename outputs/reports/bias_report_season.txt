@@ -1,0 +1,25 @@
+--- Bias Report for: season ---
+
+Executive Summary
+Overall performance: 81.5%
+Group performance:
+- Season 1: -2.0%
+- Season 4: 86.5%
+
+Technical Details
+- Season 1
+  Count: 262
+  R2-like score: -0.0195
+  RMSE: 79.067
+  MAE: 54.582
+  Bias mean error: -43.038
+- Season 4
+  Count: 480
+  R2-like score: 0.8648
+  RMSE: 65.859
+  MAE: 36.84
+  Bias mean error: 15.275
+Max performance gap: 88.5%
+
+Recommendations
+- Consider bias mitigation or subgroup-specific monitoring.

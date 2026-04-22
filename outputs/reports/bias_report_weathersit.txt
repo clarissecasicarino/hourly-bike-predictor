@@ -1,0 +1,32 @@
+--- Bias Report for: weathersit ---
+
+Executive Summary
+Overall performance: 81.5%
+Group performance:
+- Weather 1: 84.6%
+- Weather 2: 80.5%
+- Weather 3: 20.2%
+
+Technical Details
+- Weather 1
+  Count: 335
+  R2-like score: 0.8462
+  RMSE: 68.919
+  MAE: 39.815
+  Bias mean error: -7.826
+- Weather 2
+  Count: 337
+  R2-like score: 0.8046
+  RMSE: 70.246
+  MAE: 42.917
+  Bias mean error: 2.939
+- Weather 3
+  Count: 70
+  R2-like score: 0.2023
+  RMSE: 81.57
+  MAE: 59.757
+  Bias mean error: -33.042
+Max performance gap: 64.4%
+
+Recommendations
+- Consider bias mitigation or subgroup-specific monitoring.

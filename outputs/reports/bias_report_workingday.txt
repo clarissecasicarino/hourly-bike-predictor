@@ -1,0 +1,25 @@
+--- Bias Report for: workingday ---
+
+Executive Summary
+Overall performance: 81.5%
+Group performance:
+- Working day 0: 76.8%
+- Working day 1: 82.5%
+
+Technical Details
+- Working day 0
+  Count: 263
+  R2-like score: 0.7681
+  RMSE: 65.159
+  MAE: 44.468
+  Bias mean error: -7.743
+- Working day 1
+  Count: 479
+  R2-like score: 0.8252
+  RMSE: 73.721
+  MAE: 42.357
+  Bias mean error: -3.982
+Max performance gap: 5.7%
+
+Recommendations
+- Bias gaps are moderate; continue monitoring subgroup performance.
