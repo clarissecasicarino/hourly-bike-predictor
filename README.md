@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ## 📂 Folder Structure
 
-- `data/raw/` – Original `hour.csv` and `day.csv`.
+- `data/raw/` – Original `hour.csv`
 - `data/processed/` – Cleaned and feature‑engineered versions.
 - `notebooks/` – Main regression notebook.
 - `src/utils.py` – Helper functions for preprocessing.
