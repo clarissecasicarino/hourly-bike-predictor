@@ -1,0 +1,23 @@
+OPTIMIZATION AND REFLECTION
+==================================================
+
+MODEL COMPARISON
+Model comparison on the test set:
+
+model | test_mse | test_rmse | test_r2
+----------------------------------------
+Tree | 4961.82 | 70.44 | 0.817
+Linear | 14919.99 | 122.15 | 0.451
+Ridge | 14920.57 | 122.15 | 0.451
+
+OUTLIERS AND DIAGNOSTICS
+Outlier handling: Outliers were reviewed during exploratory analysis. Extreme demand values were treated as meaningful operational cases rather than automatically removed, because unusual demand spikes are important in bike-sharing operations.
+Diagnostics: Diagnostics included test-set comparison across Linear, Ridge, and Tree models, plus subgroup performance analysis and permutation importance. The tree-based model was less constrained by linear assumptions and better captured nonlinear demand behavior.
+Outliers and diagnostics were reviewed to understand unusual demand patterns, subgroup variability, and possible model weaknesses. Classical regression assumptions were more relevant for linear and ridge baselines than for the final tree-based model.
+
+DECISIONS AND TRADE-OFFS
+The main trade-off was between interpretability and predictive strength. Linear and Ridge models were simpler, but their test performance was much worse. The tree model was chosen because the performance gain was substantial, while interpretability was still supported through model cards, bias reports, transparency notes, and permutation importance.
+
+FINAL MODEL SELECTION
+Chosen model: Tree
+Why this model was selected: The tree model was selected because it achieved the best test performance across all three metrics, with the lowest MSE and RMSE and the highest R². Linear and Ridge models performed similarly to each other, but both were clearly worse than the tree model.
