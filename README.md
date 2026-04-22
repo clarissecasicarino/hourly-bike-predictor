@@ -42,7 +42,6 @@ pip install -r requirements.txt
 - `src/utils.py` – Helper functions for preprocessing.
 - `outputs/figures/` – Plots showing model performance.
 - `outputs/reports/` – Evaluation summaries.
-- `config/` – Configuration files (if any).
 - `requirements.txt` – Package dependencies.
 
 ## 📝 Ethical and Sustainability Notes
