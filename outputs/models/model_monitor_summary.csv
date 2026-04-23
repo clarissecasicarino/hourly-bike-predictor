@@ -1,0 +1,4 @@
+metric,value
+MAE,43.11
+Review threshold (75th pct),56.79
+High-risk threshold (90th pct),107.88
